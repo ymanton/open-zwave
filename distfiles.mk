@@ -1617,8 +1617,6 @@ DISTFILES =	.gitignore \
 	dist.mk \
 	dist/libopenzwave.changes \
 	dist/openzwave.spec \
-	dist/openzwave.spec \
-	dist/openzwave.spec \
 	dist/openzwave.spec.in \
 	distfiles.mk \
 	docs/ChangeLog.old \
