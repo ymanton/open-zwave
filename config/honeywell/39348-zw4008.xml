@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Honeywell(Jasco) 39348  / ZW4008 In-Wall Smart Switch -->
 <Product xmlns='http://code.google.com/p/open-zwave/'>
-	<!-- Configuration Parameters - per https://products.z-wavealliance.org/products/3599 -->
-	<CommandClass id="112">
-		<Value type="list" index="3" genre="config" label="LED Light" min="0" max="3" value="0" size="1">
-			<Help>Sets when the LED on the switch is lit.</Help>
-			<Item label="LED on when light off" value="0" />
-			<Item label="LED on when light on" value="1" />
-			<Item label="LED always off" value="2" />
-			<Item label="LED always on" value="3" />
-		</Value>
-		<value type="list" index="19" genre="config" label="Alternate Exclusion" min="0" max="1" value="0" size="1">
+  <!-- Configuration Parameters - per https://products.z-wavealliance.org/products/3599 -->
+  <CommandClass id="112">
+    <Value type="list" index="3" genre="config" label="LED Light" min="0" max="3" value="0" size="1">
+      <Help>Sets when the LED on the switch is lit.</Help>
+      <Item label="LED on when light off" value="0" />
+      <Item label="LED on when light on" value="1" />
+      <Item label="LED always off" value="2" />
+      <Item label="LED always on" value="3" />
+    </Value>
+    <Value type="list" index="19" genre="config" label="Alternate Exclusion" min="0" max="1" value="0" size="1">
       <Help>0 (default) - Press any button on the device
 1 - Press 2 times ON button and then 2 times OFF button, LED will flash 5 times if done successful</Help>
       <Item label="Any button" value="0"/>
       <Item label="2x ON button, 2x OFF button" value="1"/>
-    </value>
-	</CommandClass>
-	<!-- Association Groups -->
-	<CommandClass id="133">
-		<Associations num_groups="3">
-			<Group index="1" max_associations="5" label="Lifeline" />
-			<Group index="2" max_associations="5" label="Basic - Load" />
-			<Group index="3" max_associations="5" label="Basic - Double Tap" />
-		</Associations>
-	</CommandClass>
+    </Value>
+  </CommandClass>
+  <!-- Association Groups -->
+  <CommandClass id="133">
+    <Associations num_groups="3">
+      <Group index="1" max_associations="5" label="Lifeline" />
+      <Group index="2" max_associations="5" label="Basic - Load" />
+      <Group index="3" max_associations="5" label="Basic - Double Tap" />
+    </Associations>
+  </CommandClass>
 </Product>
