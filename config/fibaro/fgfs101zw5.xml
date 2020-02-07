@@ -21,7 +21,7 @@
             <Item label="Alarm (flooding) cancellation INACTIVE" value="0" />
             <Item label="Alarm (flooding) cancellation ACTIVE" value="1" />
         </Value>
-        <Value type="short" genre="config" instance="1" index="10" label="Interval between successive readings of temperature sensors" min="1" max="65535" value="300">
+        <Value type="int" genre="config" instance="1" index="10" label="Interval between successive readings of temperature sensors" min="1" max="65535" value="300">
             <Help>Interval between successive readings of temperature from all sensors connected to the device in seconds. Note: taking temperature readings from the sensor does not result in sending a temperature condition report to the central hub.</Help>
         </Value>
 
